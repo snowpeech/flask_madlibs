@@ -1,0 +1,13 @@
+{% extends 'base.html' %} {% block title %} Choose your story {% endblock %} {%
+block content %}
+<form action="/form">
+  <label for="choice">Choose a topic:</label>
+  <select name="topic" id="topic">
+    <option value="fairy">Fairy Tale</option>
+    <option value="airplane">Airplane</option>
+    <option value="vacation">Vacation</option>
+  </select>
+  <br /><br />
+  <input type="submit" value="Submit" />
+</form>
+{% endblock %}
