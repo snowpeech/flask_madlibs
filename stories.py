@@ -23,6 +23,7 @@ class Story:
         self.prompts = words
         self.template = text
 
+
     def generate(self, answers):
         """Substitute answers into text."""
 
@@ -50,3 +51,5 @@ airplane = Story(
 # {'occupation':"vet", "adjective":"brave","noun":"shell","verb":"run","food":"gummy bears","clothing":"socks"}
 
 vacation = Story(["adjective","descriptor", "noun", "plural_noun","game"], """ A vacation is when you take a trip to some {adjective} place with your {descriptor} family. Usually you go to some place that is near a/an {noun}.  A good vacation place is one where you can ride {plural_noun} or play {game}.""")
+
+stories ={"fairy":fairy, "airplane":airplane, "vacation":vacation}
